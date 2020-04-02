@@ -13,7 +13,8 @@ module.exports.addOption = async function(req,res){
         if(question){
             let option = await Option.create({
                 text:req.body.text,
-                votes:req.body.votes
+                votes:req.body.votes,
+                question:req.params.id
             });
             // console.log(option);
             option.link_to_vote="http://localhost:8000/options/"+option.id+"/add_vote";
