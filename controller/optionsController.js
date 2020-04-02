@@ -31,3 +31,23 @@ module.exports.addOption = async function(req,res){
     }
 };
 
+module.exports.delOption= async function(req,res){
+
+    try {
+        let option= await Option.findById(req.params.id);
+
+        let question_id=option.question;
+        option.remove();
+        
+        let question= await Question.findById(question_id);
+
+        question.options.remove(req.params.id);
+        question.save();
+        return res.json({
+            message: "Option Deleted Sucessfully!",
+        });
+    } catch (error) {
+        console.log(error);
+        return;
+    }
+}
