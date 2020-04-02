@@ -32,3 +32,11 @@ module.exports.delQuestion = async function(req,res){
         });
     }
 };
+
+module.exports.viewQuestion= async function(req,res){
+
+    let question= await Question.findById(req.params.id)
+    .populate('options')
+
+    return res.json({question:question});
+}
