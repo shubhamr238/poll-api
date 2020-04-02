@@ -1,0 +1,17 @@
+{
+  "name": "poll-api",
+  "version": "1.0.0",
+  "description": "An API based polling system, submitted by Shubham Rakshit to Arpan Garg(Coding Ninjas) as Mock Interview.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Shubham Rakshit",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7"
+  }
+}
