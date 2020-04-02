@@ -1,4 +1,4 @@
-# Ecom-API
+# poll-api
 
 <p>An API based polling system, submitted by Shubham Rakshit to Arpan Garg(Coding Ninjas) as Mock Interview.
 </p>
