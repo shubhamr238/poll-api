@@ -1,6 +1,6 @@
 # Ecom-API
 
-<p>"An API based polling system, submitted by Shubham Rakshit to Arpan Garg(Coding Ninjas) as Mock Interview."
+<p>An API based polling system, submitted by Shubham Rakshit to Arpan Garg(Coding Ninjas) as Mock Interview.
 </p>
 <p>Clone or Download the Repo, goto the terminal, cd into the repo and execute the run commad.</p>
 <ul>
