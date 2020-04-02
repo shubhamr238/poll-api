@@ -50,4 +50,27 @@ module.exports.delOption= async function(req,res){
         console.log(error);
         return;
     }
+};
+
+module.exports.add_Vote=function(req, res){
+    Option.findByIdAndUpdate(req.params.id, {$inc:{votes:1}},{new:true}, function(err, newOption){
+        if(err){
+          console.error("Error",err);
+          return res.redirect("/");
+        }
+        //console.log(newOption);
+        // newProduct.quantity=qty;
+        // newProduct.save();
+        if(newOption){
+            return res.json({data:{
+                option: newOption,
+                message: "Vote Added Succesfully!"
+            }});
+        }
+        else{
+            return res.json({data:{
+                message: "Not Possible!"
+            }});
+        }
+    });
 }

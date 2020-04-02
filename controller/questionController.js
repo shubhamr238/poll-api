@@ -31,4 +31,4 @@ module.exports.delQuestion = async function(req,res){
             message: "Internal Server Error!",
         });
     }
-}
+};
