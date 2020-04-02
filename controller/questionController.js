@@ -10,6 +10,6 @@ module.exports.addQuestion = function(req,res){
             console.error(err);
             return  res.redirect('/');
         }
-        return  res.json({question});
+        return  res.json({question, data:{"message": "Question Created Sucessfully!"}});
     });
 };
